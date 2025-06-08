@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Library - Libros de Tecnología y Ciencia Ficción</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="/styles/catalog.css">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-robot me-2"></i>Nexus Library
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Categorías
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="catalog.html?genre=cyberpunk">Ciberpunk</a></li>
+                            <li><a class="dropdown-item" href="catalog.html?genre=sci-fi">Ciencia Ficción</a></li>
+                            <li><a class="dropdown-item" href="catalog.html?genre=vr">Realidad Virtual</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="catalog.html">Todos los Libros</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="membership.html">Membresía</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="cart.html" class="btn btn-outline-light me-2">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count" class="badge bg-danger">0</span>
+                    </a>
+                    <a href="account/login.html" class="btn btn-light">
+                        <i class="fas fa-user"></i> Iniciar Sesión
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Explora el futuro a través de la lectura</h1>
+                    <p class="lead mb-4">Nexus Library reúne las obras más influyentes de ciberpunk, ciencia ficción y tecnología que desafían la imaginación.</p>
+                    <div class="search-box">
+                        <form action="catalog.html" method="get">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Buscar libros, autores..." name="search">
+                                <button class="btn btn-accent" type="submit">
+                                    <i class="fas fa-search"></i> Buscar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="images/hero-image.png" alt="Libros de tecnología" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Destacados -->
+    <section class="featured-books py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Libros Destacados</h2>
+            <div class="row" id="featured-books-container">
+                <!-- Los libros destacados se cargarán dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Categorías -->
+    <section class="categories py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Explora por Género</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <a href="catalog.html?genre=cyberpunk" class="category-card">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="images/cyberpunk-category.jpg" class="card-img-top" alt="Ciberpunk">
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Ciberpunk</h3>
+                                <p class="card-text">Tecnología avanzada, distopías urbanas y hackers rebeldes.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="catalog.html?genre=sci-fi" class="category-card">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="images/sci-fi-category.jpg" class="card-img-top" alt="Ciencia Ficción">
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Ciencia Ficción</h3>
+                                <p class="card-text">Exploración espacial, futuros alternos y avances científicos.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="catalog.html?genre=vr" class="category-card">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="images/vr-category.jpg" class="card-img-top" alt="Realidad Virtual">
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Realidad Virtual</h3>
+                                <p class="card-text">Mundos simulados, identidades digitales y límites borrosos.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Membresía -->
+    <section class="membership-cta py-5 bg-accent text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">¡Únete a nuestra membresía premium!</h2>
+            <p class="lead mb-4">Obtén descuentos exclusivos, acceso anticipado a nuevos lanzamientos y envío gratis.</p>
+            <a href="membership.html" class="btn btn-light btn-lg">Ver planes</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-4">Nexus Library</h5>
+                    <p>Tu fuente confiable para los mejores libros de tecnología, ciencia ficción y futuros imaginados.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="mb-4">Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white">Inicio</a></li>
+                        <li class="mb-2"><a href="catalog.html" class="text-white">Catálogo</a></li>
+                        <li class="mb-2"><a href="membership.html" class="text-white">Membresía</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Sobre Nosotros</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="mb-4">Categorías</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="catalog.html?genre=cyberpunk" class="text-white">Ciberpunk</a></li>
+                        <li class="mb-2"><a href="catalog.html?genre=sci-fi" class="text-white">Ciencia Ficción</a></li>
+                        <li class="mb-2"><a href="catalog.html?genre=vr" class="text-white">Realidad Virtual</a></li>
+                        <li class="mb-2"><a href="catalog.html?genre=tech" class="text-white">Tecnología</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-4">Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Av. Tecnología 1234</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +1 234 567 890</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@nexuslibrary.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2023 Nexus Library. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-3">Términos y condiciones</a>
+                    <a href="#" class="text-white">Política de privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript Personalizado -->
+    <script src="/Scripts/catalog.js"></script>
+</body>
+</html>

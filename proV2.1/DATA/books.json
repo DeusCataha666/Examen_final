@@ -1,0 +1,92 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Neuromante",
+      "author": "William Gibson",
+      "image": "/assets/images/istockphoto-1250288631-1024x1024.jpg",
+      "category": "Ciberpunk",
+      "year": 1984,
+      "rating": 4.5,
+      "price": 19.99,
+      "description": "Neuromante es una novela de ciencia ficción escrita por William Gibson y publicada en 1984. Es una obra seminal del género cyberpunk y la primera novela de la Trilogía del Sprawl."
+    },
+    {
+      "id": 2,
+      "title": "Snow Crash",
+      "author": "Neal Stephenson",
+      "image": "/assets/images/istockphoto-1250288631-1024x1024.jpg",
+      "category": "Ciberpunk",
+      "year": 1992,
+      "rating": 4.3,
+      "price": 18.50,
+      "description": "Snow Crash es una novela de ciencia ficción escrita por Neal Stephenson y publicada en 1992. Combina elementos de cyberpunk, humor y filosofía en un futuro distópico."
+    },
+    {
+      "id": 3,
+      "title": "Dune",
+      "author": "Frank Herbert",
+      "image": "/assets/images/istockphoto-1250288631-1024x1024.jpg",
+      "category": "Ciencia Ficción",
+      "year": 1965,
+      "rating": 4.7,
+      "price": 22.99,
+      "description": "Dune es una novela épica de ciencia ficción escrita por Frank Herbert en 1965. Ganó el Premio Hugo y el Premio Nébula a la mejor novela en su año, y se considera la mayor obra de ciencia ficción de todos los tiempos."
+    },
+    {
+      "id": 4,
+      "title": "Fundación",
+      "author": "Isaac Asimov",
+      "image": "/assets/images/istockphoto-1250288631-1024x1024.jpg",
+      "category": "Ciencia Ficción",
+      "year": 1951,
+      "rating": 4.6,
+      "price": 17.95,
+      "description": "Fundación es una novela de ciencia ficción de Isaac Asimov, publicada en 1951. Es la primera de una serie de relatos que más tarde serían agrupados en la Trilogía de la Fundación o Ciclo de Trántor."
+    },
+    {
+      "id": 5,
+      "title": "El problema de los tres cuerpos",
+      "author": "Liu Cixin",
+      "image": "/assets/images/istockphoto-1250288631-1024x1024.jpg",
+      "category": "Ciencia Ficción",
+      "year": 2008,
+      "rating": 4.4,
+      "price": 21.50,
+      "description": "El problema de los tres cuerpos es una novela de ciencia ficción del escritor chino Liu Cixin. Es el primer libro de la trilogía titulada El recuerdo del pasado de la Tierra."
+    },
+    {
+      "id": 6,
+      "title": "Ready Player One",
+      "author": "Ernest Cline",
+      "image": "/assets/images/istockphoto-1250288631-1024x1024.jpg",
+      "category": "Realidad Virtual",
+      "year": 2011,
+      "rating": 4.2,
+      "price": 16.99,
+      "description": "Ready Player One es una novela de ciencia ficción escrita por Ernest Cline, publicada en 2011. La historia tiene lugar en un futuro distópico en el año 2044, donde la gente escapa de la realidad a través de un mundo de realidad virtual llamado OASIS."
+    },
+    {
+      "id": 7,
+      "title": "The Diamond Age",
+      "author": "Neal Stephenson",
+      "image": "/assets/images/istockphoto-1250288631-1024x1024.jpg",
+      "category": "Nanotecnología",
+      "year": 1995,
+      "rating": 4.1,
+      "price": 19.75,
+      "description": "The Diamond Age: Or, A Young Lady's Illustrated Primer es una novela de ciencia ficción postcyberpunk escrita por Neal Stephenson y publicada en 1995. Ganó los premios Hugo y Locus en 1996."
+    },
+    {
+      "id": 8,
+      "title": "Do Androids Dream of Electric Sheep?",
+      "author": "Philip K. Dick",
+      "image": "/assets/images/istockphoto-1250288631-1024x1024.jpg",
+      "category": "Ciencia Ficción",
+      "year": 1968,
+      "rating": 4.3,
+      "price": 15.99,
+      "description": "¿Sueñan los androides con ovejas eléctricas? es una novela de ciencia ficción escrita por Philip K. Dick en 1968. La historia sigue a Rick Deckard, un cazarrecompensas que persigue androides fugados."
+    }
+  ]
+}
