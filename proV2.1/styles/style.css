@@ -307,10 +307,11 @@ body {
 }
 .carousel-book .book-img{
   width: 80%;
-  max-height: 200px;
-  height: auto; /* Altura máxima para la imagen del libro */
+  max-height: 180px;
+  height: 100%; /* Altura máxima para la imagen del libro */
   object-fit: cover;
   border-radius: 4px;
+  margin: 0 auto;
 }
 
 /*==============ESTILOS PARA LAS SECCIONES DE RECOMENDACIONES====================*/

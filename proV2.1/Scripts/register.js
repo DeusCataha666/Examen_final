@@ -11,7 +11,6 @@ document.getElementById('registerForm').addEventListener('submit', async (e) => 
     const nombre = document.getElementById('registerNombre').value;
     const apellidos = document.getElementById('registerApellidos').value;
     const nombreUsuario = document.getElementById('registerNombreUsuario').value;
-    const carrera = document.getElementById('registerCarrera').value;
 
     try {
         // Registro del usuario en Firebase Authentication
@@ -24,7 +23,6 @@ document.getElementById('registerForm').addEventListener('submit', async (e) => 
             apellidos,
             correoElectronico: email,
             nombreUsuario,
-            carrera,
             fechaRegistro: new Date().toISOString() // Genera una marca de tiempo ISO
         });
 

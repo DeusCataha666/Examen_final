@@ -52,6 +52,11 @@ document.addEventListener("DOMContentLoaded", async function () {
         <span>${book.year}</span>
         <span>${"★".repeat(Math.floor(book.rating))}${"☆".repeat(5 - Math.floor(book.rating))}</span>
       </div>
+      <div class="quick-view-actions" style="margin: 0 auto;">
+        <a href="/pages/404.html" style="text-decoration: none;">
+          <button class="btn secondary-btn">Ver detalles</button>
+        </a>
+      </div>
       <style>
         .carousel-book[data-title="${book.title}"]::after {
           background: linear-gradient(90deg, ${color1}, ${color2});
@@ -155,17 +160,18 @@ document.addEventListener("DOMContentLoaded", async function () {
       );
       card.innerHTML = `
         <h3>${book.title}</h3>
-        <img class="img-reco" src="${
-          book.image || "https://via.placeholder.com/150x200?text=No+image"
+        <img class="img-reco" src="${book.image || "https://via.placeholder.com/150x200?text=No+image"
         }" alt="Portada de ${book.title}" loading="lazy">
         <p>${book.author}</p>
 
         <div class="rating">${"★".repeat(Math.floor(book.rating))}${"☆".repeat(
-        5 - Math.floor(book.rating)
-      )}</div>
-      <button class="btn btn-sm primary-btn mt-2" style="background: var(--accent-color); color: var(--primary-bg);">Ver detalles</button> 
+          5 - Math.floor(book.rating)
+        )}</div>
+        <a href="/pages/404.html" style="text-decoration: none;">
+          <button class="btn btn-sm primary-btn mt-2" style="background: var(--accent-color); color: var(--primary-bg);">Ver detalles</button>
+        </a> 
       `;
-      
+
       card.addEventListener("click", (e) => {
         if (e.target.tagName !== "BUTTON") {
           showQuickView(book);
@@ -229,21 +235,21 @@ document.addEventListener("DOMContentLoaded", async function () {
         <button class="close-btn" aria-label="Cerrar vista rápida">&times;</button>
         <div class="quick-view-body">
           <div class="quick-view-image">
-            <img src="${
-              book.image || "https://via.placeholder.com/300x450?text=No+image"
-            }" alt="Portada de ${book.title}" loading="lazy">
+            <img src="${book.image || "https://via.placeholder.com/300x450?text=No+image"
+      }" alt="Portada de ${book.title}" loading="lazy">
           </div>
           <div class="quick-view-info">
             <h2>${book.title}</h2>
             <p class="author">${book.author}</p>
             <p class="category">${book.category}</p>
             <div class="rating">${"★".repeat(
-              Math.floor(book.rating)
-            )}${"☆".repeat(5 - Math.floor(book.rating))}</div>
+        Math.floor(book.rating)
+      )}${"☆".repeat(5 - Math.floor(book.rating))}</div>
             <p class="description">${book.description}</p>
             <div class="quick-view-actions">
-              <button class="btn primary-btn add-to-cart">Añadir al carrito</button>
-              <button class="btn secondary-btn">Ver detalles</button>
+              <a href="/pages/404.html" style="text-decoration: none;">
+                <button class="btn secondary-btn">Ver detalles</button>
+              </a>
             </div>
           </div>
         </div>
