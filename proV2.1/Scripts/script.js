@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", async function () {
           5 - Math.floor(book.rating)
         )}</div>
         <a href="/pages/404.html" style="text-decoration: none;">
-          <button class="btn btn-sm primary-btn mt-2" style="background: var(--accent-color); color: var(--primary-bg);">Ver detalles</button>
+          <button class="btn btn-sm primary-btn mt-2" style="background: var(--accent-color); color: var(--primary-bg);">Ver detalles</button>b
         </a> 
       `;
 
